@@ -1,0 +1,5 @@
+NFS over RDMA server transport for FreeBSD, built as nfsrdma.ko.
+
+This unofficial module requires the NFS/RDMA glue in FreeBSD main and
+sources matching the target kernel. It implements the server transport;
+the separately maintained nfsclrdma module implements the client.

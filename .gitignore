@@ -1,0 +1,10 @@
+/dist/
+/port/work*/
+__pycache__/
+*.pyc
+/src/*.o
+/src/*.ko
+/src/*.debug
+/src/.depend*
+/src/opt_*.h
+.DS_Store
