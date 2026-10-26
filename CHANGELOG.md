@@ -1,5 +1,10 @@
 # Changes
 
+## 0.2.20261026
+
+- Allow one page of RPC framing beyond a 1 MiB NFS WRITE payload, as
+  suggested by Rick Macklem.
+
 ## 0.2.20261024
 
 Initial server module and FreeBSD port.
