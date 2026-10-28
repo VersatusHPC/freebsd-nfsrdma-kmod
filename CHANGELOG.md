@@ -1,5 +1,10 @@
 # Changes
 
+## 0.2.20261028
+
+- Reserve one receive buffer outside the forward-call credit grant.
+- Use the same credit grant in inline, chunk and error replies.
+
 ## 0.2.20261026
 
 - Allow one page of RPC framing beyond a 1 MiB NFS WRITE payload, as
