@@ -1,5 +1,9 @@
 # Changes
 
+## 0.2.20261029
+
+- Use the connection mutex for pending reply chunks and READ boundaries.
+
 ## 0.2.20261028
 
 - Reserve one receive buffer outside the forward-call credit grant.
