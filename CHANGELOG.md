@@ -1,5 +1,11 @@
 # Changes
 
+## 0.3.20261029
+
+- Prepare reply allocations before taking the connection mutex.
+- Allow RPC framing beyond a 1 MiB READ payload.
+- Reuse whole-reply buffers through the existing buffer cache.
+
 ## 0.2.20261029
 
 - Use the connection mutex for pending reply chunks and READ boundaries.
