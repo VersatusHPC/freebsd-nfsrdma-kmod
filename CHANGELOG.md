@@ -1,5 +1,9 @@
 # Changes
 
+## 0.3.2026103000
+
+- Add a two-digit daily sequence to release versions. Server code is unchanged.
+
 ## 0.3.20261030
 
 - Prepare reply allocations before taking the connection mutex.

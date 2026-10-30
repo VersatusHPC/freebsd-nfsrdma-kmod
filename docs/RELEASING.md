@@ -1,5 +1,9 @@
 # Prepare a release
 
+Use `MAJOR.MINOR.YYYYMMDDNN`, where `NN` starts at `00` each day.
+For example, `0.3.2026103000`, then `0.3.2026103001`.
+Git tags add the `v` prefix.
+
 Source changes need a new version. Update:
 
 - `release.json`: version and timestamp.

@@ -7,7 +7,9 @@ import gzip
 import hashlib
 import io
 import json
+import re
 import tarfile
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -33,9 +35,19 @@ def archive(root: str, entries: dict[str, bytes], timestamp: int) -> bytes:
     return stream.getvalue()
 
 
+def validate_version(version: str) -> None:
+    """Require major.minor.YYYYMMDDNN, with a valid calendar date."""
+    match = re.fullmatch(r"[0-9]+\.[0-9]+\.([0-9]{8})[0-9]{2}", version)
+    if match is None:
+        raise ValueError("version must use major.minor.YYYYMMDDNN")
+    day = match[1]
+    date(int(day[:4]), int(day[4:6]), int(day[6:8]))
+
+
 def prepare() -> tuple[dict[str, bytes], dict[str, bytes]]:
     release = json.loads((ROOT / "release.json").read_text())
     version, timestamp = release["version"], release["timestamp"]
+    validate_version(version)
     manifest_bytes = (ROOT / "src/SOURCE.json").read_bytes()
     manifest = json.loads(manifest_bytes)
     if manifest["version"] != version:
