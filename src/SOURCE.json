@@ -10,16 +10,16 @@
     "nfsrdma_sink.c": "47454df7a88a1c427ef51850da55c7a6fc1480cbdd9e10e047ee9272db1c9292",
     "nfsrdma_var.h": "bce6ed002561f57f7ae94ce0db21171f13f555230b7adabc90fa7ffeeaaae074",
     "rpc/svc_rdma.h": "7f7c6b1a341dd403c96afafe19082aefe9dd28936bf2f5c235f31c2fb424148c",
-    "svc_rdma.c": "adcfd5b2ca1974445faabf9f467a0aa965a35db4a30d7a831916a2377ae93a7c",
+    "svc_rdma.c": "0bc7a9422e04147c15a4712a49daf3ff2b203acfde0ec1acc8bd12e00e226e68",
     "svc_verbs.c": "a4582f06afbcda25bc99b0d434df64e0a319e6d35a9f31dc4dbb9e1ccc2cd277"
   },
   "freebsd_base": "a3d1d4e88ae7435cfc32a886999dcde2173839cd",
-  "source_revision": "6acd4d8e4b3d2a3f03774ed92e294b8c410a2f07",
+  "source_revision": "e008b1aa9e59a04f41e11b09a31fb1bf9afd1fdd",
   "templates": {
     "Makefile.in": "2b30f8a61923a616a6bb6c41aa2bd824826836f2f72942e168b54e58f2676e68",
     "SOURCE-README.md": "65e59e91666de85fa609ce6ab1dfd17b8f3dbbc32048206d48934515e2744938",
     "module.Makefile": "af5379f31c3d5712776c2f87a5e6cb5aead0b25def1a89c5a6e05d3cde3ebc12",
     "pkg-descr": "9284d2d524628c369099b0cdc79cb06ae5f7ed27fe8bc672202ad5a8e597389b"
   },
-  "version": "0.3.20261029"
+  "version": "0.3.20261030"
 }
