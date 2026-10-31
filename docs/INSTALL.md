@@ -37,12 +37,12 @@ Download both archives from the
 [releases page](https://github.com/VersatusHPC/freebsd-nfsrdma-kmod/releases)
 and copy them to `/path/to/downloads` on the FreeBSD host:
 
-- `nfsrdma-kmod-0.3.2026103000.tar.gz`: module source.
-- `nfsrdma-kmod-port-0.3.2026103000.tar.gz`: port recipe and distinfo.
+- `nfsrdma-kmod-0.3.2026103001.tar.gz`: module source.
+- `nfsrdma-kmod-port-0.3.2026103001.tar.gz`: port recipe and distinfo.
 
 ```sh
 cd /path/to/downloads
-tar -xzf nfsrdma-kmod-port-0.3.2026103000.tar.gz
+tar -xzf nfsrdma-kmod-port-0.3.2026103001.tar.gz
 cd nfsrdma-kmod
 make DISTDIR=/path/to/downloads SRC_BASE=/usr/src stage check-plist package
 ```

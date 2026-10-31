@@ -1,5 +1,10 @@
 # Changes
 
+## 0.3.2026103001
+
+- Retry inline replies when the send pool is full.
+- Close the connection if an RDMA error reply cannot obtain a send buffer.
+
 ## 0.3.2026103000
 
 - Add a two-digit daily sequence to release versions. Server code is unchanged.
