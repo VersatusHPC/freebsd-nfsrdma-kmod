@@ -4,6 +4,7 @@
 
 - Reserve receives for callback replies and overlapping reposts.
 - Limit callback calls to the peer grant and the local receive reserve.
+- Keep the connection open while callback replies make progress.
 
 ## 0.3.2026103001
 
