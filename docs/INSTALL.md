@@ -37,12 +37,12 @@ Download both archives from the
 [releases page](https://github.com/VersatusHPC/freebsd-nfsrdma-kmod/releases)
 and copy them to `/path/to/downloads` on the FreeBSD host:
 
-- `nfsrdma-kmod-0.3.2026110100.tar.gz`: module source.
-- `nfsrdma-kmod-port-0.3.2026110100.tar.gz`: port recipe and distinfo.
+- `nfsrdma-kmod-0.3.2026110101.tar.gz`: module source.
+- `nfsrdma-kmod-port-0.3.2026110101.tar.gz`: port recipe and distinfo.
 
 ```sh
 cd /path/to/downloads
-tar -xzf nfsrdma-kmod-port-0.3.2026110100.tar.gz
+tar -xzf nfsrdma-kmod-port-0.3.2026110101.tar.gz
 cd nfsrdma-kmod
 make DISTDIR=/path/to/downloads SRC_BASE=/usr/src stage check-plist package
 ```
@@ -76,6 +76,23 @@ log if it fails to start.
 
 The module refuses to unload while nfsd is running. To disable RDMA, stop
 nfsd, set `nfs_server_rdma_enable=NO`, unload `nfsrdma`, and restart nfsd.
+
+### Callback credits
+
+The server allows up to eight outstanding callbacks per RDMA connection by
+default. To change the limit for new connections:
+
+```sh
+sysctl vfs.nfsd.rdma_callback_credits=8
+```
+
+The range is 1–64. Existing connections keep their original limit, and the
+server also respects the client's credit grant. Larger limits reserve more
+receive buffers per connection. A connection is refused if the device cannot
+provide the callback reserve plus room for forward requests and reposts.
+
+To set the limit when the module loads, add
+`vfs.nfsd.rdma_callback_credits="8"` to `/boot/loader.conf`.
 
 ## Build without ports
 

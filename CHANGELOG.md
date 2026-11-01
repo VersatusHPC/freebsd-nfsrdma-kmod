@@ -1,5 +1,10 @@
 # Changes
 
+## 0.3.2026110101
+
+- Add `vfs.nfsd.rdma_callback_credits`, defaulting to eight.
+- Apply the callback limit to new connections and size their receive reserve.
+
 ## 0.3.2026110100
 
 - Reserve receives for callback replies and overlapping reposts.
