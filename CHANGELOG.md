@@ -1,5 +1,10 @@
 # Changes
 
+## 0.3.2026110100
+
+- Reserve receives for callback replies and overlapping reposts.
+- Limit callback calls to the peer grant and the local receive reserve.
+
 ## 0.3.2026103001
 
 - Retry inline replies when the send pool is full.
