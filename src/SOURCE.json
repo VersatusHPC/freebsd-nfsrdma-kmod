@@ -4,22 +4,22 @@
     "LICENSE": "61bbc275ecd910cdcde2f348252d69635a34802ea8cf6802addaa2ae598c8bfe",
     "Makefile": "af5379f31c3d5712776c2f87a5e6cb5aead0b25def1a89c5a6e05d3cde3ebc12",
     "README.md": "65e59e91666de85fa609ce6ab1dfd17b8f3dbbc32048206d48934515e2744938",
-    "nfsrdma_conn.c": "67236e0b3d53ef47d04cdc8bb113b0eb3ff64a00a70002a22746e7990529eda6",
-    "nfsrdma_data.c": "da722d348464ebb944ba8c9c7c18ad7e251e03e9dcb8d08f15ed5b01e04bc3b9",
+    "nfsrdma_conn.c": "bd03bbc2220812f4705dcb99aa3b1d2fe08f8541e7e3ea5f8642522c111ae762",
+    "nfsrdma_data.c": "c983e30a6dd2afec63cf8d6b96760650fbbc1d24cf7c378c36ecde464c60f781",
     "nfsrdma_decode.c": "4ee572023f53565fd6fe899290211ec0816257ec4698f0f7795c032a439d121f",
     "nfsrdma_sink.c": "47454df7a88a1c427ef51850da55c7a6fc1480cbdd9e10e047ee9272db1c9292",
-    "nfsrdma_var.h": "14042b02703c9d32b212145d01302ec94df9d3865feb56cef97ac3f7c3935c46",
-    "rpc/svc_rdma.h": "854683519a98bcd0d7f1dc74c4ce8e70b5a67ba432ed67df0a509f0dee4f9099",
-    "svc_rdma.c": "3ac7b805b8193b28e9f81f022dda9e60fe085077ff2116b2fe10aa18cec399bd",
-    "svc_verbs.c": "fe607b53e4ce95d88447ec2c1aa5906023a9fea668ecbcf6896918587bb5707b"
+    "nfsrdma_var.h": "70327cb1e6c761b913c6b8195513c95e160a5afdf00250c2928b5f2ff02c4e15",
+    "rpc/svc_rdma.h": "5036853b0a33b691b5824b3190315ab9f63c8a01447e030d5de591d1ddd7343f",
+    "svc_rdma.c": "a0e5d0a525cfa257bd1e17923a69075de4add85e8098a3f7164813757f0f596f",
+    "svc_verbs.c": "1f9f569da90788763185e4467fcc0ad93d97de3f75e25457bba73d8fbcad3383"
   },
   "freebsd_base": "a3d1d4e88ae7435cfc32a886999dcde2173839cd",
-  "source_revision": "951226339f76b8280954e3f908fd182adf98e66a",
+  "source_revision": "fcbb7dc2f5b12db8c4263dff90328d3de794e2df",
   "templates": {
     "Makefile.in": "2b30f8a61923a616a6bb6c41aa2bd824826836f2f72942e168b54e58f2676e68",
     "SOURCE-README.md": "65e59e91666de85fa609ce6ab1dfd17b8f3dbbc32048206d48934515e2744938",
     "module.Makefile": "af5379f31c3d5712776c2f87a5e6cb5aead0b25def1a89c5a6e05d3cde3ebc12",
     "pkg-descr": "9284d2d524628c369099b0cdc79cb06ae5f7ed27fe8bc672202ad5a8e597389b"
   },
-  "version": "0.3.2026110101"
+  "version": "0.3.2026110200"
 }

@@ -1,5 +1,10 @@
 # Changes
 
+## 0.3.2026110200
+
+- Reserve send-queue space before posting large replies.
+- Wait for reply cleanup when the queue is full, avoiding failed posts and reconnects.
+
 ## 0.3.2026110101
 
 - Add `vfs.nfsd.rdma_callback_credits`, defaulting to eight.
