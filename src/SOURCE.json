@@ -5,7 +5,7 @@
     "Makefile": "af5379f31c3d5712776c2f87a5e6cb5aead0b25def1a89c5a6e05d3cde3ebc12",
     "README.md": "65e59e91666de85fa609ce6ab1dfd17b8f3dbbc32048206d48934515e2744938",
     "nfsrdma_conn.c": "bd03bbc2220812f4705dcb99aa3b1d2fe08f8541e7e3ea5f8642522c111ae762",
-    "nfsrdma_data.c": "eb8d1f3b78d1a0ea7b9ce12bb8a8d6f03bba0e6e0793bff0aff971037b0a10dc",
+    "nfsrdma_data.c": "97db79748bf8c8db0f6868e05ab4536c4096520fdc4308a0967a356e35b14058",
     "nfsrdma_decode.c": "4ee572023f53565fd6fe899290211ec0816257ec4698f0f7795c032a439d121f",
     "nfsrdma_sink.c": "47454df7a88a1c427ef51850da55c7a6fc1480cbdd9e10e047ee9272db1c9292",
     "nfsrdma_var.h": "70327cb1e6c761b913c6b8195513c95e160a5afdf00250c2928b5f2ff02c4e15",
@@ -14,12 +14,12 @@
     "svc_verbs.c": "1f9f569da90788763185e4467fcc0ad93d97de3f75e25457bba73d8fbcad3383"
   },
   "freebsd_base": "a3d1d4e88ae7435cfc32a886999dcde2173839cd",
-  "source_revision": "719f7b8a1b64bae2bf7195c636b96f9aa7fba664",
+  "source_revision": "420686de125d08cc55f0c4a53d0418698ac1c729",
   "templates": {
     "Makefile.in": "2b30f8a61923a616a6bb6c41aa2bd824826836f2f72942e168b54e58f2676e68",
     "SOURCE-README.md": "65e59e91666de85fa609ce6ab1dfd17b8f3dbbc32048206d48934515e2744938",
     "module.Makefile": "af5379f31c3d5712776c2f87a5e6cb5aead0b25def1a89c5a6e05d3cde3ebc12",
     "pkg-descr": "9284d2d524628c369099b0cdc79cb06ae5f7ed27fe8bc672202ad5a8e597389b"
   },
-  "version": "0.3.2026110200"
+  "version": "0.3.2026110201"
 }

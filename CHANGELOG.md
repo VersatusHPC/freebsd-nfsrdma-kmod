@@ -1,5 +1,10 @@
 # Changes
 
+## 0.3.2026110201
+
+- Restore XDR padding after reduced WRITE data.
+- Keep mbuf storage and packet lengths consistent with the restored padding.
+
 ## 0.3.2026110200
 
 - Reserve send-queue space before posting large replies.

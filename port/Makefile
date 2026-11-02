@@ -1,5 +1,5 @@
 PORTNAME=	nfsrdma-kmod
-DISTVERSION=	0.3.2026110200
+DISTVERSION=	0.3.2026110201
 CATEGORIES=	net
 MASTER_SITES=	https://github.com/VersatusHPC/freebsd-nfsrdma-kmod/releases/download/v${DISTVERSION}/
 
