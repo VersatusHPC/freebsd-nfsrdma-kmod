@@ -1,5 +1,10 @@
 # Changes
 
+## 0.3.2026110300
+
+- Preserve the complete request prefix when it spans multiple mbufs, avoiding
+  truncated requests and leaked mbufs.
+
 ## 0.3.2026110201
 
 - Restore XDR padding after reduced WRITE data.
