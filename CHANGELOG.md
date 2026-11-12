@@ -1,5 +1,10 @@
 # Changes
 
+## 0.3.2026111101
+
+- Use GNU gzip to produce matching release archives on zlib and zlib-ng systems.
+- Module code is unchanged from 0.3.2026111100.
+
 ## 0.3.2026111100
 
 - Synchronize reused SEND buffers before submitting them to the device.

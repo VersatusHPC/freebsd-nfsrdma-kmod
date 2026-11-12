@@ -16,6 +16,9 @@ import the source again. Update `CHANGELOG.md` and the archive filenames in
 
 ## Build the archives
 
+Use Python 3.10 or later and GNU gzip. Python's gzip output differs between
+zlib and zlib-ng, which changes the port checksum for identical source files.
+
 Use an output directory that does not already exist:
 
 ```sh

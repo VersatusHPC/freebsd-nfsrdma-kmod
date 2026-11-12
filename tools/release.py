@@ -3,11 +3,12 @@
 """Check release metadata or produce deterministic source and port archives."""
 
 import argparse
-import gzip
 import hashlib
 import io
 import json
+import os
 import re
+import subprocess
 import tarfile
 from datetime import date
 from pathlib import Path
@@ -21,18 +22,19 @@ def digest(data: bytes) -> str:
 
 def archive(root: str, entries: dict[str, bytes], timestamp: int) -> bytes:
     stream = io.BytesIO()
-    with (
-        gzip.GzipFile(fileobj=stream, mode="wb", filename="",
-                      compresslevel=6, mtime=timestamp) as gz,
-        tarfile.open(fileobj=gz, mode="w", format=tarfile.USTAR_FORMAT) as tar,
-    ):
+    with tarfile.open(fileobj=stream, mode="w", format=tarfile.USTAR_FORMAT) as tar:
         for name, data in sorted(entries.items()):
             info = tarfile.TarInfo(f"{root}/{name}")
             info.size = len(data)
             info.mode = 0o644
             info.mtime = timestamp
             tar.addfile(info, io.BytesIO(data))
-    return stream.getvalue()
+    env = os.environ.copy()
+    env.pop("GZIP", None)
+    return subprocess.run(
+        ["gzip", "-n", "-6", "-c"], input=stream.getvalue(),
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, env=env,
+    ).stdout
 
 
 def validate_version(version: str) -> None:
@@ -45,6 +47,11 @@ def validate_version(version: str) -> None:
 
 
 def prepare() -> tuple[dict[str, bytes], dict[str, bytes]]:
+    gzip_version = subprocess.run(
+        ["gzip", "--version"], capture_output=True, check=True,
+    ).stdout
+    if b"Free Software Foundation" not in gzip_version:
+        raise ValueError("release archives require GNU gzip")
     release = json.loads((ROOT / "release.json").read_text())
     version, timestamp = release["version"], release["timestamp"]
     validate_version(version)
@@ -107,7 +114,8 @@ def main() -> None:
             (args.output / "SHA256").write_text(checksums)
             (args.output / "distinfo").write_bytes(port["distinfo"])
         print(checksums, end="")
-    except (OSError, ValueError, KeyError, TypeError) as error:
+    except (OSError, ValueError, KeyError, TypeError,
+            subprocess.CalledProcessError) as error:
         parser.exit(1, f"release check failed: {error}\n")
 
 
