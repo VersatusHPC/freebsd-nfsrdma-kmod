@@ -1,5 +1,13 @@
 # Changes
 
+## 0.3.2026111100
+
+- Synchronize reused SEND buffers before submitting them to the device.
+- Queue connection teardown before publishing the closed state.
+- Reserve a receive slot for queue draining.
+- Respect the peer's negotiated RDMA Read depths.
+- Declare direct dependencies on NFS and XDR modules.
+
 ## 0.3.2026110300
 
 - Preserve the complete request prefix when it spans multiple mbufs, avoiding

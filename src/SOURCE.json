@@ -4,22 +4,22 @@
     "LICENSE": "61bbc275ecd910cdcde2f348252d69635a34802ea8cf6802addaa2ae598c8bfe",
     "Makefile": "af5379f31c3d5712776c2f87a5e6cb5aead0b25def1a89c5a6e05d3cde3ebc12",
     "README.md": "65e59e91666de85fa609ce6ab1dfd17b8f3dbbc32048206d48934515e2744938",
-    "nfsrdma_conn.c": "bd03bbc2220812f4705dcb99aa3b1d2fe08f8541e7e3ea5f8642522c111ae762",
+    "nfsrdma_conn.c": "bd474be0658936fb3a8b9b735632c73596791613aca887049e76314db915733c",
     "nfsrdma_data.c": "c855f4ff5db6305b11fa81d96567c74b6204e7d018fe98a1bbdc7bd9df0cac52",
     "nfsrdma_decode.c": "4ee572023f53565fd6fe899290211ec0816257ec4698f0f7795c032a439d121f",
     "nfsrdma_sink.c": "47454df7a88a1c427ef51850da55c7a6fc1480cbdd9e10e047ee9272db1c9292",
     "nfsrdma_var.h": "70327cb1e6c761b913c6b8195513c95e160a5afdf00250c2928b5f2ff02c4e15",
     "rpc/svc_rdma.h": "5036853b0a33b691b5824b3190315ab9f63c8a01447e030d5de591d1ddd7343f",
     "svc_rdma.c": "a0e5d0a525cfa257bd1e17923a69075de4add85e8098a3f7164813757f0f596f",
-    "svc_verbs.c": "1f9f569da90788763185e4467fcc0ad93d97de3f75e25457bba73d8fbcad3383"
+    "svc_verbs.c": "1a5d20836ef67dbb3836d6e194a27cf15e75a2946fdae6c260f359ac25e05cac"
   },
-  "freebsd_base": "a3d1d4e88ae7435cfc32a886999dcde2173839cd",
-  "source_revision": "a3a2f95777facb932cdc26251d420449f0211c5e",
+  "freebsd_base": "b3860403a7cfbd32e4b21f214c2d3a46ef1a27b9",
+  "source_revision": "c7ef6498f907b5031a8e5714c46471982fed4486",
   "templates": {
     "Makefile.in": "2b30f8a61923a616a6bb6c41aa2bd824826836f2f72942e168b54e58f2676e68",
     "SOURCE-README.md": "65e59e91666de85fa609ce6ab1dfd17b8f3dbbc32048206d48934515e2744938",
     "module.Makefile": "af5379f31c3d5712776c2f87a5e6cb5aead0b25def1a89c5a6e05d3cde3ebc12",
     "pkg-descr": "9284d2d524628c369099b0cdc79cb06ae5f7ed27fe8bc672202ad5a8e597389b"
   },
-  "version": "0.3.2026110300"
+  "version": "0.3.2026111100"
 }
